@@ -1,0 +1,46 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Sample Documentation of Echo Swag.",
+        "title": "Echo Swag API Documentation",
+        "contact": {},
+        "version": "1.0"
+    },
+    "host": "echo-swag-layarda-test.com",
+    "basePath": "/v1",
+    "paths": {
+        "/v1/books": {
+            "get": {
+                "description": "get book data",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "books"
+                ],
+                "summary": "Get Book Data",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/book.BookResponse"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "book.BookResponse": {
+            "type": "object",
+            "properties": {
+                "message": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

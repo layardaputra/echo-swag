@@ -1,0 +1,30 @@
+basePath: /v1
+definitions:
+  book.BookResponse:
+    properties:
+      message:
+        type: string
+    type: object
+host: echo-swag-layarda-test.com
+info:
+  contact: {}
+  description: Sample Documentation of Echo Swag.
+  title: Echo Swag API Documentation
+  version: "1.0"
+paths:
+  /v1/books:
+    get:
+      consumes:
+      - application/json
+      description: get book data
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/book.BookResponse'
+      summary: Get Book Data
+      tags:
+      - books
+swagger: "2.0"
