@@ -1,6 +1,7 @@
 # echo-swag
 
-```markdown
+Sample of using echo swag for learning purpose
+
 ## Generating Swagger Documentation for Your Go Project
 
 ### 1. Install go-swag
@@ -15,6 +16,7 @@ go get -u github.com/swaggo/swag/cmd/swag
 
 Navigate to your project's root directory and run the following command to generate Swagger documentation:
 
+Please adapt the paths, filenames, and port numbers according to your project's structure and configuration.
 ```bash
 swag init -g ./cmd/main.go
 ```
